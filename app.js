@@ -1,10 +1,12 @@
 const http = require('http');
 
+const PORT = process.env.PORT || 3000;
+
 const server = http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello from DevOps on AWS 🚀\n');
+  res.end(`🚀 App running in production on port ${PORT}\n`);
 });
 
-server.listen(3000, () => {
-  console.log('Server running on port 3000');
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
