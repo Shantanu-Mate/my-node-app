@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end(`🚀 App running in production on port final jenkins versioning testing ${PORT}\n`);
+  res.end(`🚀 App running in production on port final jenkins versioning testing + flow checking ${PORT}\n`);
 });
 
 server.listen(PORT, () => {
